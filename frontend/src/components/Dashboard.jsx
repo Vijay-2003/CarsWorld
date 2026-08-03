@@ -9,6 +9,7 @@ import UpcomingCars from '../DashboardComponents/UpcomingCars'
 import RecentCars from '../DashboardComponents/RecentCars'
 import RecentBrands from '../DashboardComponents/RecentBrands'
 import RecentReviews from '../DashboardComponents/RecentReviews'
+import DashboardSkeleton from "../DashboardComponents/DashboardSkeleton";
 
 const Dashboard = () => {
 
@@ -43,16 +44,17 @@ const Dashboard = () => {
   }, []);
 
   if (!ok) {
-    return (
-      <div className="min-h-screen bg-black flex items-center justify-center">
-        <BlinkBlur
-          color="#fff200"
-          size="medium"
-          text="Loading..."
-          textColor="#ffffff"
-        />
-      </div>
-    )
+     return <DashboardSkeleton />;
+    // return (
+    //   <div className="min-h-screen bg-black flex items-center justify-center">
+    //     <BlinkBlur
+    //       color="#fff200"
+    //       size="medium"
+    //       text="Loading..."
+    //       textColor="#ffffff"
+    //     />
+    //   </div>
+    // )
   }
 
   return (
