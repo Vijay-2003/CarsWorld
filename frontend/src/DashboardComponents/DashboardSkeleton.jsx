@@ -1,5 +1,5 @@
 import React from "react";
-
+ 
 const DashboardSkeleton = () => {
     return (
         <div className="min-h-screen bg-linear-to-b from-black via-zinc-950 to-black animate-pulse">
