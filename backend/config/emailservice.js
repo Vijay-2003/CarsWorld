@@ -79,7 +79,7 @@ export const sendAdminInquiryEmail = async (data) => {
     const htmlContent = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 10px;">
             <h2 style="color: #4f46e5;">New Contact Form Submission</h2>
-            <p>You have received a new inquiry from the JobPortal contact form.</p>
+            <p>You have received a new inquiry from the CarsWorld contact form.</p>
             <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                 ${['fullName', 'email', 'phone', 'subject', 'message'].map(key => `
                     <tr>
